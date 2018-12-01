@@ -1,0 +1,7 @@
+//Добавляем файл
+git add -A
+git commit -m ''
+git push
+
+//Получить новые файлы
+git pull
