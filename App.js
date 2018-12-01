@@ -1,7 +1,9 @@
 //Родитель
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import Header from './src/components/uikit/Header';
+//import Header from './src/components/uikit/Header';
+//import ImageCart from './src/components/uikit/ImageCard';
+import {Header, ImageCart} from "./src/components/uikit";
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
 export default class App extends Component {
@@ -31,6 +33,7 @@ export default class App extends Component {
         return (
             <View style={styles.containter}>
                 <Header title={this.state.title}/>
+                <ImageCart/>
                 <Text style={styles.welcom}>{'Hello Word'}</Text>
             </View>
 
