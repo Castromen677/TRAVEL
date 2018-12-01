@@ -1,18 +1,18 @@
 //Header
 //import
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 
 //body props
-const Header = ({ title }) => {
+const Header = props => {
+    console.log(props)
     return (
         <View style={styles.headerBlock}>
-            <Text style={styles.headerTitle}>{title}</Text>
+            <Text style={styles.headerTitle}>{props.title}</Text>
         </View>
     )
 }
-
 
 
 const styles = StyleSheet.create({
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         fontSize: 28,
         //flex: 1,
         margin: 10,
-        paddingTop : 40,
+        paddingTop: 40,
         fontWeight: "bold",
         fontFamily: "AppleSDGothicNeo-Regular"
 

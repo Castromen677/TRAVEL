@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/castromen/Youhobby/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.cpp \
-  /Users/castromen/Youhobby/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Users/castromen/Youhobby/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h
+  /Users/castromen/Downloads/TRAVEL/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.cpp \
+  /Users/castromen/Downloads/TRAVEL/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/castromen/Downloads/TRAVEL/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h
