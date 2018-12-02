@@ -1,15 +1,12 @@
 //Родитель
 import React, {Component} from 'react';
-import {StyleSheet, View, Text, Dimensions} from 'react-native';
+import {StyleSheet, View, ScrollView} from 'react-native';
 //import Header from './src/components/uikit/Header';
 //import ImageCart from './src/components/uikit/ImageCard';
 import {Header, ImageCart} from "./src/components/uikit";
+import {w, h} from './constans' //Константы
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
-
-const win = Dimensions.get('window')
-const h = win.height
-const w = win.width
 
 export default class App extends Component {
     //Model
@@ -18,10 +15,12 @@ export default class App extends Component {
         data: []
     };
     componentDidMount = async () => {
+
         try {
             const respons = await fetch(url) // Get Data
             const data = await respons.json()
             this.setState({data}) //Post Date
+            console.log(data)
         } catch (e) {
             throw e
             console.log("Ошибка", e)
@@ -32,15 +31,20 @@ export default class App extends Component {
 
     //View
     render() {
-        console.log(w, "- ", w)
+        const {title, data} = this.state
+        const {containter, blockCart} = styles
         return (
-            <View style={styles.containter}>
-                <Header title={this.state.title}/>
-                <ImageCart/>
-                <Text style={styles.welcom}>{'Hello Word'}</Text>
+            <View style={containter}>
+                <Header title={title}/>
+               <ScrollView>
+                <View style={blockCart}>
+                    {data.map(item => {
+                        <ImageCart data={item} key={item.id} />
+                    })
+                    }
+                </View>
+               </ScrollView>
             </View>
-
-
         )
     }
 };
@@ -48,6 +52,12 @@ export default class App extends Component {
 const styles = StyleSheet.create({
     containter: {
         flex: 1,
+    },
+    blockCart: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        marginBottom: 150,
     },
     welcom: {
         fontSize: 12,
