@@ -1,11 +1,16 @@
 //Родитель
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Dimensions} from 'react-native';
 //import Header from './src/components/uikit/Header';
 //import ImageCart from './src/components/uikit/ImageCard';
 import {Header, ImageCart} from "./src/components/uikit";
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
+
+const win = Dimensions.get('window')
+const h = win.height
+const w = win.width
+
 export default class App extends Component {
     //Model
     state = {
@@ -16,9 +21,7 @@ export default class App extends Component {
         try {
             const respons = await fetch(url) // Get Data
             const data = await respons.json()
-            //console.log(data[0])
-            //Post Date
-            this.setState({data})
+            this.setState({data}) //Post Date
         } catch (e) {
             throw e
             console.log("Ошибка", e)
@@ -29,7 +32,7 @@ export default class App extends Component {
 
     //View
     render() {
-        console.log(this.state.data)
+        console.log(w, "- ", w)
         return (
             <View style={styles.containter}>
                 <Header title={this.state.title}/>
