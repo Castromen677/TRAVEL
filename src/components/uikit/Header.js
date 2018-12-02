@@ -7,6 +7,8 @@ import {View, Text, StyleSheet} from 'react-native';
 //body props
 const Header = props => {
     console.log(props)
+    console.log("---------")
+    console.log("---------")
     return (
         <View style={styles.headerBlock}>
             <Text style={styles.headerTitle}>{props.title}</Text>

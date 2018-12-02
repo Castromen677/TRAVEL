@@ -1,6 +1,0 @@
-/*<View style={blockCart}>
-                    { data.map(item => {
-                        <ImageCart data={item} key={item.id} />
-                    })
-                    }
-    </View>*/

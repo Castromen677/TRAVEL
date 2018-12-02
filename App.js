@@ -1,10 +1,8 @@
 //Родитель
 import React, {Component} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
-//import Header from './src/components/uikit/Header';
-//import ImageCart from './src/components/uikit/ImageCard';
 import {Header, ImageCart} from "./src/components/uikit";
-import {w, h} from './constans' //Константы
+
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
 
@@ -15,18 +13,13 @@ export default class App extends Component {
         data: []
     };
     componentDidMount = async () => {
-
         try {
             const respons = await fetch(url) // Get Data
             const data = await respons.json()
-            this.setState({data}) //Post Date
-            console.log(data)
+            this.setState({ data }) //Post Date
         } catch (e) {
             throw e
-            console.log("Ошибка", e)
-
         }
-
     }
 
     //View
@@ -38,10 +31,9 @@ export default class App extends Component {
                 <Header title={title}/>
                <ScrollView>
                 <View style={blockCart}>
-                    {data.map(item => {
+                    { data.map(item => (
                         <ImageCart data={item} key={item.id} />
-                    })
-                    }
+                    ))}
                 </View>
                </ScrollView>
             </View>
@@ -57,11 +49,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
-        marginBottom: 150,
-    },
-    welcom: {
-        fontSize: 12,
-        color: 'red'
+        marginBottom: 150
     }
 
 })

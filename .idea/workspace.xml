@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c89ba35-1fd5-4ae4-a9f4-e18658010ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/constans.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTShadowView+Internal.dia" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTShadowView+Internal.dia" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.d" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTMultipartStreamReader.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSourceCode.d" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSourceCode.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSourceCode.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.dia" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.dia" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/dgph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/dgph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/double-conversion.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/double-conversion.build/dgph" afterDir="false" />
@@ -17,10 +16,13 @@
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/privatedata.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/privatedata.build/dgph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/dgph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/yoga.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/yoga.build/dgph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/Logs/Build/38C7D9FE-A5FE-4995-B61D-B042AF894618.xcactivitylog" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/build/Logs/Build/D66DBFB8-FFCD-44C6-8911-A2BC0C9FD8C3.xcactivitylog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/ModuleCache.noindex/2KUFDGRY0XP8Q/CoreGraphics-54UV9QOCX3ZY.pcm.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/build/info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/build/info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/uikit/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/uikit/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/uikit/ImageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/uikit/ImageCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text" beforeDir="false" afterPath="$PROJECT_DIR$/text" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,25 +45,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
           <entry key="text" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2191" />
+          <entry key="js" value="2759" />
+          <entry key="text" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2191" />
+          <entry key="JavaScript" value="2759" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -71,11 +75,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="689">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding>
                 <element signature="e#11#50#0" expanded="true" />
-                <element signature="e#218#275#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,11 +86,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -102,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/uikit/ImageCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+            <state relative-caret-position="578">
+              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -114,10 +113,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/uikit/Header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#18#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,9 +131,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/uikit/index.js" />
-        <option value="$PROJECT_DIR$/src/components/uikit/Header.js" />
         <option value="$PROJECT_DIR$/constans.js" />
+        <option value="$PROJECT_DIR$/src/components/uikit/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/uikit/index.js" />
+        <option value="$PROJECT_DIR$/src/components/uikit/Layout.js" />
         <option value="$PROJECT_DIR$/text" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/src/components/uikit/ImageCard.js" />
@@ -248,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543662016159</updated>
       <workItem from="1543662018698" duration="8501000" />
-      <workItem from="1543764406618" duration="590000" />
+      <workItem from="1543764406618" duration="4035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9091000" />
+    <option name="totallyTimeSpent" value="12536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="252" y="23" width="1428" height="960" extended-state="0" />
@@ -296,21 +297,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#11#50#0" expanded="true" />
-            <element signature="e#218#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/components/uikit/Layout.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/text">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/uikit/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#18#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -321,20 +321,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/uikit/Header.js">
+    <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="689">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#11#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/uikit/ImageCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="578">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
