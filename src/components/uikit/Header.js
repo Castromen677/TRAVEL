@@ -1,7 +1,7 @@
 //Header
 //import
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {ifIphoneX} from 'react-native-iphone-x-helper';
 
 
@@ -37,7 +37,12 @@ const styles = StyleSheet.create({
         color: "white",
         fontSize: 28,
         margin: 10,
-        paddingTop: 40,
+        ...ifIphoneX({
+            paddingTop: 60,
+        }, {
+            paddingTop: 35,
+        }),
+        textAlign: 'center',
         fontWeight: "bold",
         fontFamily: "AppleSDGothicNeo-Regular"
 

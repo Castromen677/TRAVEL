@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     images: {
         borderRadius: 5,
         width: w / 2.4,
-        height: w * 0.63,
+        height: w * 0.63
     },
     labelCart: {
         fontFamily: "AppleSDGothicNeo-Regular",
