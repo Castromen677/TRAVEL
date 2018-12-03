@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     block: {
         width: w / 2.4,
         backgroundColor: 'white',
-        margin: 10,
+        margin: 5,
     },
     subView: {
         shadowColor: "#000",

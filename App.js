@@ -16,7 +16,7 @@ export default class App extends Component {
         try {
             const respons = await fetch(url) // Get Data
             const data = await respons.json()
-            this.setState({ data }) //Post Date
+            this.setState({data}) //Post Date
         } catch (e) {
             throw e
         }
@@ -25,17 +25,17 @@ export default class App extends Component {
     //View
     render() {
         const {title, data} = this.state
-        const {containter, blockCart} = styles
+        const {containter, safeArea, blockCart} = styles
         return (
             <View style={containter}>
                 <Header title={title}/>
-               <ScrollView>
-                <View style={blockCart}>
-                    { data.map(item => (
-                        <ImageCart data={item} key={item.id} />
-                    ))}
-                </View>
-               </ScrollView>
+                <ScrollView>
+                    <View style={blockCart}>
+                        {data.map(item => (
+                            <ImageCart data={item} key={item.id}/>
+                        ))}
+                    </View>
+                </ScrollView>
             </View>
         )
     }
@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
-        marginBottom: 150
+        marginBottom: 120,
+        marginTop: 20
     }
 
 })

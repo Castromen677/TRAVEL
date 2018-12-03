@@ -1,17 +1,17 @@
 //Header
 //import
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {ifIphoneX} from 'react-native-iphone-x-helper';
 
 
 //body props
 const Header = props => {
     console.log(props)
-    console.log("---------")
-    console.log("---------")
+    const {headerBlock, headerTitle} = styles
     return (
-        <View style={styles.headerBlock}>
-            <Text style={styles.headerTitle}>{props.title}</Text>
+        <View style={headerBlock}>
+            <Text style={headerTitle}>{props.title}</Text>
         </View>
     )
 }
@@ -19,9 +19,12 @@ const Header = props => {
 
 const styles = StyleSheet.create({
     headerBlock: {
-        //flex: 0.5,
-        height: 90,
-        //justifyContent: 'flex-start',
+        ...ifIphoneX({
+            height: 115,
+        }, {
+            height: 90,
+        }),
+        //height: 90,
         backgroundColor: '#8bc34a',
         shadowColor: "#000",
         shadowOffset: {width: 0, height: 2},
@@ -33,7 +36,6 @@ const styles = StyleSheet.create({
     headerTitle: {
         color: "white",
         fontSize: 28,
-        //flex: 1,
         margin: 10,
         paddingTop: 40,
         fontWeight: "bold",
@@ -43,4 +45,4 @@ const styles = StyleSheet.create({
 });
 
 //export
-export { Header }
+export {Header}
