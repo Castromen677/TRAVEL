@@ -1,13 +1,19 @@
 //Header
 //import
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 import {ifIphoneX} from 'react-native-iphone-x-helper';
-
+import {w} from '../../../constans'
 
 //body props
-const Header = props => {
-    console.log(props)
+const Header = ({
+                    detail,
+                    leftIcon,
+                    leftColor,
+                    headerColor,
+                    title,
+                    onPress
+                }) => {
     const {headerBlock, headerTitle} = styles
     return (
         <View style={headerBlock}>
