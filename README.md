@@ -1,1 +1,1 @@
-# TravegGuide
+# TravelGuide
