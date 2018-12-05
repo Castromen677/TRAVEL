@@ -5,7 +5,7 @@ import {Header, ImageCart} from "../components/uikit";
 import {
     STARGATE_DETAILS
 } from '../routes'
-import { WHITE, BLUE } from '../../constants'
+
 
 const url = 'https://api.tvmaze.com/search/shows?q=stargate'
 //const url = 'https://api.tvmaze.com/search/shows?q=girls'
@@ -36,17 +36,12 @@ export default class HomeScreen extends Component {
         return (
             <View style={containter}>
                 <Header title={title}
-                        headerColor={BLUE}
-                        onPress={() => navigation.openDrawer()}
-                        leftIcon='ios-menu'
-                        leftColor={WHITE}
                 />
                 <ScrollView>
                     <View style={blockCart}>
                         {data.map(item => (
                             <ImageCart data={item.show}
                                        key={item.show.id}
-                                       onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack}))}
                             />
                         ))}
                     </View>

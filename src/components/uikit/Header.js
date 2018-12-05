@@ -7,12 +7,7 @@ import {w} from '../../../constans'
 
 //body props
 const Header = ({
-                    detail,
-                    leftIcon,
-                    leftColor,
-                    headerColor,
-                    title,
-                    onPress
+                    title
                 }) => {
     const {headerBlock, headerTitle} = styles
     return (
