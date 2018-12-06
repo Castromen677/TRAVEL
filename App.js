@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
 import {Header, ImageCart} from "./src/components/uikit";
 
-
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
 
 export default class App extends Component {
