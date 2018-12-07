@@ -1,24 +1,28 @@
 import React from 'react'
-import {View, Text, Image, StyleSheet} from 'react-native'
+import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native'
 import {w, h} from '../../../constans' //Константы
 
-const ImageCart = ({data}) => {
+const ImageCart = ({data, onPress}) => {
     console.log("_______________")
     const {block, subView, images, labelCart} = styles
-    const {image, name} = data
+    const {image, name} = data.show
+    const imgHttps = `https${image.medium.slice(4)}`
+    console.log(imgHttps)
     return (
-        <View style={block}>
-            <View styl={subView}>
-                <Image style={images} source={{uri: image}}/>
+        <TouchableOpacity onPress={onPress}>
+            <View style={block}>
+                <View styl={subView}>
+                    <Image style={images} source={{uri: imgHttps}}/>
+                </View>
+                <Text style={labelCart}>{name.toUpperCase()}</Text>
             </View>
-            <Text style={labelCart}>{name.toUpperCase()}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({
     block: {
         width: w / 2.4,
-        backgroundColor: 'white',
+        //backgroundColor: 'none',
         margin: 5,
     },
     subView: {

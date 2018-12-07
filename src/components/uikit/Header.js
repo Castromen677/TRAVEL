@@ -6,7 +6,7 @@ import {ifIphoneX} from 'react-native-iphone-x-helper';
 import {w} from '../../../constans'
 
 //body props
-const Header = ({title}) => {
+const Header = ({ title }) => {
     const {headerBlock, headerTitle} = styles
     return (
         <View style={headerBlock}>

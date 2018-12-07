@@ -2,8 +2,9 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
 import {Header, ImageCart} from "../components/uikit";
+import {STARGATE_DETAILS} from "../routes";
 
-const url = 'https://api.tvmaze.com/search/shows?q=startgate'
+const url = 'https://api.tvmaze.com/search/shows?q=stargate'
 
 export default class HomeScreen extends Component {
     //Model
@@ -25,13 +26,19 @@ export default class HomeScreen extends Component {
     render() {
         const {title, data} = this.state
         const {containter, safeArea, blockCart} = styles
+        const {navigation} = this.props
+        console.log("this.props", this.props)
         return (
             <View style={containter}>
                 <Header title={title}/>
                 <ScrollView>
                     <View style={blockCart}>
                         {data.map(item => (
-                            <ImageCart data={item} key={item.id}/>
+                            <ImageCart data={item}
+                                       key={item.show.id}
+                                       //onPress={()=> console.log("OnPress")}
+                                       onPress={() => navigation.navigate(STARGATE_DETAILS, (item.show))}
+                            />
                         ))}
                     </View>
                 </ScrollView>

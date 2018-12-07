@@ -1,0 +1,2 @@
+//react-navigation v2
+- yarn add react-navigation@2
