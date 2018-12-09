@@ -50,6 +50,7 @@ export default class HomeScreen extends Component {
 const styles = StyleSheet.create({
     containter: {
         flex: 1,
+        backgroundColor: 'white'
     },
     blockCart: {
         flexDirection: 'row',
